@@ -127,21 +127,25 @@
             .hero-image img {
                 width: 100%;
             }
-            .agent {
-                display: flex;
-                gap: 1rem;
-            }
             .agent img {
-                flex: 1;
                 width: 100%;
                 background-color: #666;
-            }
-            .agent .details {
-                flex: 4;
             }
             .agent h4 a {
                 text-decoration: none;
                 font-weight: 800;
+            }
+            @media (min-width: 720px) {
+                .agent {
+                    display: flex;
+                    gap: 1rem;
+                }
+                .agent img {
+                    flex: 1;
+                }
+                .agent .details {
+                    flex: 4;
+                }
             }
         </style>        
     </head>
