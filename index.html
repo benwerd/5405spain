@@ -99,6 +99,14 @@
                 padding-bottom: 150px;
               }
             }
+            .properties ul li:before {
+                content: '-';
+                margin-right: 20px;
+            }
+            .amenities ul li:before {
+                content: '✓';
+                margin-right: 20px;
+            }
             @media only screen and (min-width: 1024px) {
                 .properties, .amenities {
                     display: flex;
@@ -106,14 +114,6 @@
                 .properties ul, .amenities ul {
                     flex: 1;
                     flex-direction: column;
-                }
-                .properties ul li:before {
-                    content: '-';
-                    margin-right: 20px;
-                }
-                .amenities ul li:before {
-                    content: '✓';
-                    margin-right: 20px;
                 }
             }
             @media only screen and (max-width: 1023px) {
@@ -125,6 +125,10 @@
                 }
                 .properties ul, .amenities ul {
                     margin: 0;
+                    padding-inline-start: 15px;
+                }
+                .properties ul li {
+                    padding-left: 0;
                 }
             }
             .hero-image {
@@ -215,6 +219,13 @@
             <h3>
                 For Sale: Coming Soon
             </h3>
+            <p>
+                This well-maintained family home is minutes away from the vineyards and rolling hills of wine country. Whether you’re working from home, lounging in the pool, or using it as a base to explore everything Sonoma County has to offer, this home offers a relaxing lifestyle away from the rat race.
+            </p>
+            <p>
+                <a href="our-experiences.html"><strong>Learn more about our experiences in the house</strong></a>, or
+                <a href="attractions.html"><strong>discover some nearby attractions we love.</strong></a>
+            </p>
             <div class="amenities">
                 <ul>
                     <li>In-ground swimming pool</li>
@@ -229,13 +240,6 @@
                     <li>New, energy efficent roof</li>
                 </ul>
             </div>
-            <p>
-                This well-maintained family home is minutes away from the vineyards and rolling hills of wine country. Whether you’re working from home, lounging in the pool, or using it as a base to explore everything Sonoma County has to offer, this home offers a relaxing lifestyle away from the rat race.
-            </p>
-            <p>
-                <a href="our-experiences.html"><strong>Learn more about our experiences in the house</strong></a>, or
-                <a href="attractions.html"><strong>discover some nearby attractions we love.</strong></a>
-            </p>
             <div class="hero-image">
                 <img srcset="images/living-room-2000.jpg 2000w, images/living-room-1200.jpg 1200w, images/living-room-480.jpg 480w"
                      sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
