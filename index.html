@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="mobile-web-app-capable" content="yes">
 
+        <!-- Don't link the parcel as a phone number ... -->
+        <meta name="format-detection" content="telephone=no">
+
         <!-- Social tags -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@benwerd">
@@ -149,6 +152,10 @@
             @media only screen and (max-width: 750px) {
                 .image-pair {
                     row-gap: 35px;
+                    gap: 0px;
+                }
+                .image-pair img {
+                    width: 100%;
                 }
             }
             .image-pair img {
