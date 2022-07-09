@@ -133,6 +133,21 @@
             .hero-image img {
                 width: 100%;
             }
+            .image-pair {
+                width: 100%;
+                display: grid;
+                gap: 25px;
+                flex-wrap: wrap;
+                margin-bottom: 50px;
+            }
+            @media only screen and (min-width: 750px) {
+                .image-pair {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            .image-pair img {
+                max-width: 100%;
+            }
             .agent img {
                 width: 100%;
                 max-width: 189px;
@@ -209,11 +224,27 @@
                 <a href="attractions.html"><strong>discover some nearby attractions we love.</strong></a>
             </p>
             <div class="hero-image">
-                <img srcset="images/kitchen-2000.jpg 2000w, images/kitchen-1200.jpg 1200w, images/kitchen-480.jpg 480w"
+                <img srcset="images/living-room-2000.jpg 2000w, images/living-room-1200.jpg 1200w, images/living-room-480.jpg 480w"
+                     sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
+                     src="images/living-room-1200.jpeg"
+                     alt="Dining room with spacious, vaulted ceilings"
+                     loading="lazy">
+            </div>
+            <div class="image-pair">
+                <div>
+                    <img srcset="images/kitchen-2000.jpg 2000w, images/kitchen-1200.jpg 1200w, images/kitchen-480.jpg 480w"
                         sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
-                        src="images/kitchen-1200.jpeg"
+                        src="images/kitchen-2000.jpg"
                         alt="Kitchen with brand new appliances and a view of the pool"
                         loading="lazy">
+                </div>
+                <div>
+                    <img srcset="images/bed-2000.jpg 2000w, images/bed-1200.jpg 1200w, images/bed-480.jpg 480w"
+                        sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
+                        src="images/bed-2000.jpg"
+                        alt="Bright master bedroom with ensuite bathroom"
+                        loading="lazy">
+                </div>
             </div>
         </main>
         <div class="properties">
@@ -231,12 +262,36 @@
             </ul>
         </div>
         <main>
-            <div class="hero-image">
-                <img srcset="images/living-room-2000.jpg 2000w, images/living-room-1200.jpg 1200w, images/living-room-480.jpg 480w"
-                     sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
-                     src="images/living-room-1200.jpeg"
-                     alt="Living and dining room with spacious, vaulted ceilings"
-                     loading="lazy">
+            <div class="image-pair">
+                <div>
+                    <img srcset="images/sofa-2000.jpg 2000w, images/sofa-1200.jpg 1200w, images/sofa-480.jpg 480w"
+                        sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
+                        src="images/sofa-2000.jpg"
+                        alt="Living room with built-in fireplace and beautiful, vaulted ceilings"
+                        loading="lazy">
+                </div>
+                <div>
+                    <img srcset="images/office-2000.jpg 2000w, images/office-1200.jpg 1200w, images/office-480.jpg 480w"
+                        sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
+                        src="images/office-2000.jpg"
+                        alt="Spacious office looking out on trees"
+                        loading="lazy">
+                </div>
+                <div>
+                    <img srcset="images/deck-2000.jpg 2000w, images/deck-1200.jpg 1200w, images/deck-480.jpg 480w"
+                        sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
+                        src="images/deck-2000.jpg"
+                        alt="Sunny backyard deck"
+                        loading="lazy">
+                </div>
+                <div>
+                    <img srcset="images/family-2000.jpg 2000w, images/family-1200.jpg 1200w, images/family-480.jpg 480w"
+                        sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
+                        src="images/family-2000.jpg"
+                        alt="Spacious family room"
+                        loading="lazy">
+                </div>
+            </div>
         </main>
         <div class="agent">
             <img src="/images/florence.jpg" alt="A photograph of Florence Sheffer, realtor">
