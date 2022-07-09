@@ -79,7 +79,7 @@
                 line-height: 3rem;
                 display: block;
                 margin-bottom: 3rem;
-                background-color: #fcf6de;
+                background-color: #dbe5ef;
             }
             .properties {
                 margin-top: 1.5rem;
@@ -89,6 +89,12 @@
             }
             .properties ul, .amenities ul {
                 list-style: none;
+            }
+            @media only screen and (max-width: 750px) {
+              body {
+                padding: 10px;
+                padding-bottom: 150px;
+              }
             }
             @media only screen and (min-width: 1024px) {
                 .properties, .amenities {
@@ -129,6 +135,7 @@
             }
             .agent img {
                 width: 100%;
+                max-width: 189px;
                 background-color: #666;
             }
             .agent h4 a {
@@ -147,6 +154,17 @@
                     flex: 4;
                 }
             }
+            @media (max-width: 720px) {
+                .agent img {
+                    margin: auto;
+                    margin-bottom: 25px;
+                    display: block;
+                }
+                .agent {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
         </style>        
     </head>
     <body>
@@ -159,7 +177,7 @@
             </h2>
         </header>
         <div class="hero-image">
-            <img srcset="images/hero-2000.jpeg 2000w, images/hero-1200.jpeg 1200w, images/hero-480.jpeg 480w"
+            <img srcset="images/hero-2000.jpg 2000w, images/hero-1200.jpg 1200w, images/hero-480.jpg 480w"
                  sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
                  src="images/hero-1200.jpeg"
                  alt="A photograph of a 3-bedroom house in Santa Rosa"
@@ -169,39 +187,57 @@
             <h3>
                 For Sale: Coming Soon
             </h3>
-            <div class="properties">
+            <div class="amenities">
                 <ul>
-                    <li>3 bedrooms</li>
-                    <li>2½ bathrooms</li>
-                    <li>House: 1992 sq ft</li>
-                    <li>Lot: 7405 sq ft</li>
+                    <li>In-ground swimming pool</li>
+                    <li>Split-level outside deck</li>
+                    <li>Master bedroom with en-suite bathroom</li>
+                    <li>Kitchen with modern appliances</li>
                 </ul>
                 <ul>
-                    <li>Single family</li>
-                    <li>Year built: 1977</li>
-                    <li>Parcel: 153440026000</li>
-                    <li>Property tax: $5,316</li>
+                    <li>Hardwood red oak floors</li>
+                    <li>Vaulted ceilings</li>
+                    <li>Two-car garage</li>
+                    <li>New, energy efficent roof</li>
                 </ul>
             </div>
             <p>
                 This well-maintained family home is minutes away from the vineyards and rolling hills of wine country. Whether you’re working from home, lounging in the pool, or using it as a base to explore everything Sonoma County has to offer, this home offers a relaxing lifestyle away from the rat race.
-                <a href="attractions.html">Here are some nearby attractions we love.</a>
             </p>
+            <p>
+                <a href="our-experiences.html"><strong>Learn more about our experiences in the house</strong></a>, or
+                <a href="attractions.html"><strong>discover some nearby attractions we love.</strong></a>
+            </p>
+            <div class="hero-image">
+                <img srcset="images/kitchen-2000.jpg 2000w, images/kitchen-1200.jpg 1200w, images/kitchen-480.jpg 480w"
+                        sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
+                        src="images/kitchen-1200.jpeg"
+                        alt="Kitchen with brand new appliances and a view of the pool"
+                        loading="lazy">
+            </div>
         </main>
-        <div class="amenities">
+        <div class="properties">
             <ul>
-                <li>In-ground swimming pool</li>
-                <li>Split-level outside deck</li>
-                <li>Master bedroom with en-suite bathroom</li>
-                <li>Kitchen with modern appliances</li>
+                <li>3 bedrooms</li>
+                <li>2½ bathrooms</li>
+                <li>House: 1992 sq ft</li>
+                <li>Lot: 7405 sq ft</li>
             </ul>
             <ul>
-                <li>Hardwood red oak floors</li>
-                <li>Vaulted ceilings</li>
-                <li>Two-car garage</li>
-                <li>LEED-compliant roof</li>
+                <li>Single family</li>
+                <li>Year built: 1977</li>
+                <li>Parcel: 153440026000</li>
+                <li>Property tax: $5,316</li>
             </ul>
         </div>
+        <main>
+            <div class="hero-image">
+                <img srcset="images/living-room-2000.jpg 2000w, images/living-room-1200.jpg 1200w, images/living-room-480.jpg 480w"
+                     sizes="(max-width: 600px) 480px, (max-width: 1300px) 1200px, (min-width: 1301px) 2000px"
+                     src="images/living-room-1200.jpeg"
+                     alt="Living and dining room with spacious, vaulted ceilings"
+                     loading="lazy">
+        </main>
         <div class="agent">
             <img src="/images/florence.jpg" alt="A photograph of Florence Sheffer, realtor">
             <div class="details">
