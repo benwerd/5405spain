@@ -1,5 +1,4 @@
 <IfModule mod_headers.c>
     Header set Content-Security-Policy "default-src 'self'; script-src 'self'; frame-ancestors 'none'; form-action 'none', form-action 'self'; base-uri 'none', base-uri 'self'"
     Header set X-Frame-Options: DENY
-    Header set Strict-Transport-Security: max-age=31536000; includeSubDomains
 </IfModule>
