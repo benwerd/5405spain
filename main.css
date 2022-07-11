@@ -115,6 +115,12 @@ a {
     margin-bottom: 50px;
     row-gap: 25px;
 }
+.illustration {
+    max-width: 50%;
+    float: right;
+    margin-bottom: 50px;
+    margin-left: 25px;
+}
 @media only screen and (min-width: 750px) {
     .image-pair {
         grid-template-columns: repeat(2, 1fr);
