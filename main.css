@@ -15,7 +15,6 @@ footer {
     font-size: 0.8rem;
 }
 h1, h2, h3 {
-    font-weight: 100;
     line-height: 1.4em;
     text-align: left;
 }
@@ -23,7 +22,6 @@ h1 {
     font-size: 4.5rem;
     font-family: Helvetica; /* 'Homemade Apple'; */
     color: rgb(7, 66, 32);
-    font-weight: 100;
     line-height: 4rem;
 }
 h2 {
@@ -36,13 +34,11 @@ h3 {
 }
 h4 {
     font-size: 1.3rem;
-    font-weight: 100;
     margin: 0; padding: 0;
 }
 p {
     font-size: 1.2rem;
     line-height: 2rem;
-    font-weight: 100;
 }
 a {
     color: #333;
